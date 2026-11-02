@@ -64,6 +64,8 @@
     });
     // Tablas con desplazamiento horizontal en celular
     document.querySelectorAll('.content table').forEach(t => {
+      const head = t.querySelector('thead');
+      if (head && !head.textContent.trim()) { head.remove(); t.classList.add('form-table'); }
       const w = document.createElement('div'); w.className = 'table-wrap';
       t.parentNode.insertBefore(w, t); w.appendChild(t);
     });
