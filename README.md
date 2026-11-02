@@ -64,7 +64,7 @@ flowchart LR
 | 🗃️ **Parte 2** | [Base de datos en NCBI](docs/02_base_de_datos_ncbi.md) | Elegir organismos y descargar las secuencias de *HBA1* |
 | 🧩 **Parte 3** | [Alineamiento múltiple](docs/03_alineamiento.md) | Alinear las secuencias |
 | 🌳 **Parte 4** | [Árbol filogenético](docs/04_arbol_filogenetico.md) | PhyML, bootstrap, enraizado y exportación |
-| 📝 **Entregable** | [Plantilla de reporte](plantillas/reporte_practica.md) | Formato que entrega cada estudiante |
+| 📝 **Entregable** | [Plantilla de reporte (Word)](plantillas/reporte_practica.docx) · [ver en línea](plantillas/reporte_practica.md) | Formato que entrega cada estudiante |
 | 📋 **Entregable** | [Tabla de organismos (.csv)](plantillas/tabla_organismos.csv) | Tabla 1 para llenar |
 | 🧪 **Datos** | [Formato FASTA](datos/README.md) | Cómo debe verse el archivo de secuencias |
 
@@ -76,7 +76,7 @@ flowchart LR
 4. Alinea las secuencias en SeaView (**Align → Align all**).
 5. Corre **PhyML** con **100 réplicas de bootstrap**.
 6. Enraiza con el pez, activa *Br support* y guarda el árbol en PDF.
-7. Completa la [plantilla de reporte](plantillas/reporte_practica.md).
+7. Descarga y llena la [plantilla de reporte en Word](plantillas/reporte_practica.docx).
 
 ## 💻 Requisitos
 

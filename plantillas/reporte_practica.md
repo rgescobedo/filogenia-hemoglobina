@@ -1,3 +1,6 @@
+> [!TIP]
+> 📥 **Descarga la plantilla en Word:** [reporte_practica.docx](reporte_practica.docx). Llénala y entrégala; esta página es solo de consulta.
+
 <div align="center">
 
 # Universidad Autónoma de Chihuahua

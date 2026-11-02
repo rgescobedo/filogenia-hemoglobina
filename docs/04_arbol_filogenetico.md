@@ -60,7 +60,7 @@ Regresa a **Full** y marca la casilla **Br support** para ver los valores de boo
 
 ### Paso 23 · ¡Listo! 🎉
 
-Ya tienes tu árbol filogenético del gen de la hemoglobina subunidad alfa 1. Continúa con la [plantilla de reporte](../plantillas/reporte_practica.md).
+Ya tienes tu árbol filogenético del gen de la hemoglobina subunidad alfa 1. Continúa con el reporte: descarga la [plantilla en Word](../plantillas/reporte_practica.docx).
 
 ---
 
