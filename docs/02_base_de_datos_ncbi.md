@@ -8,18 +8,18 @@ En esta parte crearás un archivo **FASTA** con una secuencia del gen de la **he
 
 ### Paso 5 · Elige tus organismos
 
-Revisa la película **"Sing ¡Ven y canta!"** y elabora una lista de **todos** los personajes que aparecen. Para cada uno, investiga su **nombre científico**: lo usarás para buscar en GenBank.
+Revisa la película **"Sing ¡Ven y canta!"** y elabora una lista de los **animales** que aparecen. Para cada uno, investiga su **nombre científico**: lo usarás para buscar en GenBank.
 
 Registra la información en la [tabla de organismos](../plantillas/tabla_organismos.csv):
 
-| Número | Personaje / nombre común | Minuto en que aparece por 1.ª vez | Nombre científico | Imagen |
-| :---: | --- | :---: | --- | :---: |
-| 1 | | | | |
-| 2 | | | | |
-| … | | | | |
+| Número | Personaje / nombre común | Nombre científico | Imagen |
+| :---: | --- | --- | :---: |
+| 1 | | | |
+| 2 | | | |
+| … | | | |
 
 > [!IMPORTANT]
-> Asegúrate de que tu lista incluya **al menos un pez**. Lo usarás como **grupo externo** para enraizar el árbol en la [Parte 4](04_arbol_filogenetico.md#paso-24--enraiza-el-árbol-con-el-grupo-externo).
+> Agrega a tu lista **un pez** (aunque no aparezca en la película). Lo usarás como **grupo externo** para enraizar el árbol en la [Parte 4](04_arbol_filogenetico.md#paso-24--enraiza-el-árbol-con-el-grupo-externo).
 
 ### Paso 6 · Entra a NCBI Nucleotide
 

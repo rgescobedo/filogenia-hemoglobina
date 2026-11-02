@@ -15,22 +15,19 @@ Con tu alineamiento abierto, ve a **Trees → PhyML**.
 ### Paso 21 · Activa el bootstrap
 
 > [!IMPORTANT]
-> La opción **no viene seleccionada**. Marca **Bootstrap with** y escribe **`1000`** replicates. Después da clic en **Run**.
+> La opción **no viene seleccionada**. Marca **Bootstrap with** y escribe **`100`** replicates. Después da clic en **Run**.
 
-![Bootstrap con 1000 réplicas](img/25_bootstrap_1000.webp)
+![Opciones de bootstrap en PhyML](img/25_bootstrap.webp)
 
 ### Paso 22 · Espera el cálculo
 
-PhyML primero obtiene el árbol de máxima verosimilitud y después repite el análisis **1000 veces** con remuestreos del alineamiento. El **valor de bootstrap** de cada rama indica en qué porcentaje de esas réplicas apareció esa misma agrupación: entre más alto, más confiable.
+PhyML primero obtiene el árbol de máxima verosimilitud y después repite el análisis **100 veces** con remuestreos del alineamiento. El **valor de bootstrap** de cada rama indica en qué porcentaje de esas réplicas apareció esa misma agrupación: entre más alto, más confiable.
 
 ![PhyML corriendo](img/26_phyml_corriendo.webp)
 
 ![Progreso del bootstrap](img/27_phyml_progreso.webp)
 
 ⏱️ **Registra cuánto tardó tu análisis.**
-
-> [!WARNING]
-> Puede tardar minutos, horas o incluso días, según el número de secuencias y tu equipo (procesador y RAM). Si a las **24 h** no ha terminado, toma una **captura de pantalla** que muestre cuántas réplicas lleva, interrumpe el análisis y vuelve a correrlo con **500 réplicas**.
 
 ### Paso 23 · Observa el árbol
 

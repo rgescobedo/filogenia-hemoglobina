@@ -51,7 +51,7 @@ flowchart LR
     C --> D["🧩 Alineamiento<br/>(SeaView)"]
     D --> E["✂️ Recorte de<br/>extremos 5' y 3'"]
     E --> D
-    E --> F["🌳 PhyML<br/>bootstrap 1000"]
+    E --> F["🌳 PhyML<br/>bootstrap 100"]
     F --> G["🐟 Enraizar con<br/>grupo externo"]
     G --> H["📊 Interpretar<br/>y reportar"]
 ```
@@ -67,15 +67,14 @@ flowchart LR
 | 📝 **Entregable** | [Plantilla de reporte](plantillas/reporte_practica.md) | Formato que entrega cada estudiante |
 | 📋 **Entregable** | [Tabla de organismos (.csv)](plantillas/tabla_organismos.csv) | Tabla 1 para llenar |
 | 🧪 **Datos** | [Formato FASTA](datos/README.md) | Cómo debe verse el archivo de secuencias |
-| 👩‍🏫 **Docente** | [Notas para el docente](docs/guia_docente.md) | Errores comunes, tiempos y criterios de evaluación |
 
 ## ⚡ Inicio rápido
 
 1. Instala **[SeaView](http://doua.prabi.fr/software/seaview)** para tu sistema operativo.
-2. Llena la [tabla de organismos](plantillas/tabla_organismos.csv) — **incluye un pez** como grupo externo.
+2. Haz la lista de los animales de la película en la [tabla de organismos](plantillas/tabla_organismos.csv) e **incluye un pez** como grupo externo.
 3. Descarga una secuencia de *HBA1* por organismo desde **[NCBI Nucleotide](https://www.ncbi.nlm.nih.gov/nuccore/)**, en formato FASTA.
 4. Alinea → recorta → vuelve a alinear en SeaView.
-5. Corre **PhyML** con **1000 réplicas de bootstrap**.
+5. Corre **PhyML** con **100 réplicas de bootstrap**.
 6. Enraiza con el pez, activa *Br support* y guarda el árbol en PDF.
 7. Completa la [plantilla de reporte](plantillas/reporte_practica.md).
 
@@ -87,9 +86,6 @@ flowchart LR
 | Software | [SeaView](http://doua.prabi.fr/software/seaview) (incluye MUSCLE/Clustal y PhyML) |
 | Internet | Para consultar [NCBI](https://www.ncbi.nlm.nih.gov/) |
 | Opcional | [Inkscape](https://inkscape.org/es/) para convertir el árbol de SVG a PNG/JPG |
-
-> [!WARNING]
-> El cálculo de 1000 réplicas de bootstrap puede tardar desde minutos hasta horas según el número de secuencias y el equipo. **No lo dejes para el final.**
 
 ## 📚 Referencias
 

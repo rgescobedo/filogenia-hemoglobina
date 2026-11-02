@@ -1,7 +1,16 @@
-# Reporte · Filogenia de la Hemoglobina α1
+<div align="center">
 
-**Universidad Autónoma de Chihuahua · Facultad de Zootecnia y Ecología**
-**Materia:** Biología Celular
+# Universidad Autónoma de Chihuahua
+
+## Facultad de Zootecnia y Ecología
+
+### Materia: Biología Celular
+
+<br>
+
+**Reporte de práctica: Filogenia de la Hemoglobina α1**
+
+<br>
 
 | | |
 | --- | --- |
@@ -9,6 +18,8 @@
 | **Matrícula:** | |
 | **Grupo:** | |
 | **Fecha de entrega:** | |
+
+</div>
 
 ---
 
@@ -32,16 +43,18 @@ Conocer los fundamentos del análisis filogenético y realizar la reconstrucció
 
 **Tabla 1.** Organismos utilizados en la práctica.
 
-| Número | Personaje / nombre común | Minuto en que aparece por 1.ª vez | Nombre científico | No. de acceso GenBank | Longitud (pb) | Imagen |
-| :---: | --- | :---: | --- | --- | :---: | :---: |
-| 1 | | | | | | |
-| 2 | | | | | | |
-| 3 | | | | | | |
-| 4 | | | | | | |
-| 5 | | | | | | |
-| 6 | | | | | | |
-| 7 | | | | | | |
-| … | | | | | | |
+| Número | Personaje / nombre común | Nombre científico | Imagen |
+| :---: | --- | --- | :---: |
+| 1 | | | |
+| 2 | | | |
+| 3 | | | |
+| 4 | | | |
+| 5 | | | |
+| 6 | | | |
+| 7 | | | |
+| … | | | |
+
+> Incluye en la tabla el **pez** que usaste como grupo externo.
 
 **Tiempo de cálculo de PhyML:** ______ (réplicas de bootstrap: ______)
 
