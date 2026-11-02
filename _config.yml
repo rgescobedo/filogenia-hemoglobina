@@ -1,0 +1,21 @@
+title: Filogenia de la Hemoglobina α1
+description: Práctica de bioinformática · Biología Celular · FZyE-UACH
+lang: es
+markdown: kramdown
+kramdown:
+  input: GFM
+  parse_block_html: true
+  hard_wrap: false
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+plugins:
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+relative_links:
+  enabled: true
+  collections: false

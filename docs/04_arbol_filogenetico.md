@@ -6,20 +6,20 @@ Usaremos **PhyML**, que construye el árbol por **máxima verosimilitud**: busca
 
 ---
 
-### Paso 20 · Abre PhyML
+### Paso 16 · Abre PhyML
 
 Con tu alineamiento abierto, ve a **Trees → PhyML**.
 
 ![Trees → PhyML](img/24_trees_phyml.webp)
 
-### Paso 21 · Activa el bootstrap
+### Paso 17 · Activa el bootstrap
 
 > [!IMPORTANT]
 > La opción **no viene seleccionada**. Marca **Bootstrap with** y escribe **`100`** replicates. Después da clic en **Run**.
 
 ![Opciones de bootstrap en PhyML](img/25_bootstrap.webp)
 
-### Paso 22 · Espera el cálculo
+### Paso 18 · Espera el cálculo
 
 PhyML primero obtiene el árbol de máxima verosimilitud y después repite el análisis **100 veces** con remuestreos del alineamiento. El **valor de bootstrap** de cada rama indica en qué porcentaje de esas réplicas apareció esa misma agrupación: entre más alto, más confiable.
 
@@ -27,15 +27,13 @@ PhyML primero obtiene el árbol de máxima verosimilitud y después repite el an
 
 ![Progreso del bootstrap](img/27_phyml_progreso.webp)
 
-⏱️ **Registra cuánto tardó tu análisis.**
-
-### Paso 23 · Observa el árbol
+### Paso 19 · Observa el árbol
 
 Al terminar aparecerá el árbol filogenético:
 
 ![Árbol inicial](img/28_arbol_inicial.webp)
 
-### Paso 24 · Enraiza el árbol con el grupo externo
+### Paso 20 · Enraiza el árbol con el grupo externo
 
 PhyML produce un árbol **sin raíz**. Para darle dirección evolutiva, selecciona **Re-root** y da clic en el cuadro negro del **pez** que incluiste como grupo externo.
 
@@ -48,19 +46,19 @@ La topología (forma) del árbol cambiará:
 > [!NOTE]
 > El pez funciona como **grupo externo** porque está más alejado evolutivamente de los demás vertebrados de tu lista (mamíferos, aves, reptiles). Todo lo demás debe agruparse "dentro" de él.
 
-### Paso 25 · Muestra los valores de bootstrap
+### Paso 21 · Muestra los valores de bootstrap
 
 Regresa a **Full** y marca la casilla **Br support** para ver los valores de bootstrap en cada nodo.
 
 ![Br support](img/31_br_support.webp)
 
-### Paso 26 · Guarda tu árbol
+### Paso 22 · Guarda tu árbol
 
 **File → Save as PDF**. También existe **Save as SVG**; si tu equipo no abre SVG, puedes convertirlo a PNG o JPG con [Inkscape](https://inkscape.org/es/), o tomar una captura de pantalla del árbol.
 
 ![Guardar como PDF](img/32_guardar_pdf.webp)
 
-### Paso 27 · ¡Listo! 🎉
+### Paso 23 · ¡Listo! 🎉
 
 Ya tienes tu árbol filogenético del gen de la hemoglobina subunidad alfa 1. Continúa con la [plantilla de reporte](../plantillas/reporte_practica.md).
 

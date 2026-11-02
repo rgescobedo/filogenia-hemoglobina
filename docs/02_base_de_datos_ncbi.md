@@ -18,8 +18,22 @@ Registra la información en la [tabla de organismos](../plantillas/tabla_organis
 | 2 | | | |
 | … | | | |
 
-> [!IMPORTANT]
-> Agrega a tu lista **un pez** (aunque no aparezca en la película). Lo usarás como **grupo externo** para enraizar el árbol en la [Parte 4](04_arbol_filogenetico.md#paso-24--enraiza-el-árbol-con-el-grupo-externo).
+> [!NOTE]
+> Usa solo **vertebrados** (mamíferos, aves, reptiles, anfibios y peces). Los invertebrados que aparecen en la película, como calamares, caracoles o arañas, **no tienen el gen *HBA1***. Si un animal aparece varias veces (por ejemplo, perros de distintas razas), cuenta como **una sola especie**.
+
+#### 🐠 El grupo externo: un pez
+
+Agrega a tu lista **un pez**, aunque no aparezca en la película. Lo usarás como **grupo externo** para enraizar el árbol en la [Parte 4](04_arbol_filogenetico.md#paso-20--enraiza-el-árbol-con-el-grupo-externo).
+
+Te sugerimos al **pez payaso** (*Amphiprion ocellaris*), la especie de **Nemo** en *Buscando a Nemo*. Puedes usar directamente esta secuencia:
+
+| Pez | Nombre científico | Secuencia en NCBI | Nombre en tu FASTA |
+| --- | --- | --- | --- |
+| 🐠 Pez payaso (Nemo) | *Amphiprion ocellaris* | [XM_023279594.3](https://www.ncbi.nlm.nih.gov/nuccore/XM_023279594.3) (576 pb) | `>Amphiprion_ocellaris` |
+| 🐟 Pez cebra (alternativa) | *Danio rerio* | [NM_131257.3](https://www.ncbi.nlm.nih.gov/nuccore/NM_131257.3) (584 pb) | `>Danio_rerio` |
+
+> [!TIP]
+> En NCBI, la secuencia del pez payaso aparece como *"hemoglobin embryonic subunit alpha"*. Es correcta para esta práctica: en los peces las globinas alfa se nombran distinto y, como solo la usamos como grupo externo, funciona perfectamente.
 
 ### Paso 6 · Entra a NCBI Nucleotide
 

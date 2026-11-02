@@ -35,7 +35,7 @@ Conocer los fundamentos del análisis filogenético y realizar la reconstrucció
 
 ## 3. Materiales y métodos
 
-> Describe brevemente, **con tus palabras**, lo que hiciste: base de datos utilizada, criterios para elegir cada secuencia, programa de alineamiento, cómo recortaste, método de reconstrucción (PhyML, máxima verosimilitud), número de réplicas de bootstrap y grupo externo.
+> Describe brevemente, **con tus palabras**, lo que hiciste: base de datos utilizada, criterios para elegir cada secuencia, programa de alineamiento, método de reconstrucción (PhyML, máxima verosimilitud), número de réplicas de bootstrap y grupo externo.
 
 <!-- Escribe aquí -->
 
@@ -56,8 +56,6 @@ Conocer los fundamentos del análisis filogenético y realizar la reconstrucció
 
 > Incluye en la tabla el **pez** que usaste como grupo externo.
 
-**Tiempo de cálculo de PhyML:** ______ (réplicas de bootstrap: ______)
-
 **Figura 1.** Árbol filogenético del gen de la hemoglobina subunidad alfa 1.
 
 <!-- Inserta aquí la imagen de tu árbol -->
@@ -66,16 +64,12 @@ Conocer los fundamentos del análisis filogenético y realizar la reconstrucció
 
 ### Preguntas
 
-1. ¿Qué nos indica el acomodo de los organismos en el árbol filogenético obtenido?
-2. ¿Por qué se utilizaron genes para hacer el análisis?
-3. ¿Tuviste problemas para encontrar alguna secuencia? Si así fue, ¿cómo lo resolviste?
-4. ¿Ves congruentes tus resultados en el acomodo de los organismos? ¿Observas algún organismo que creas que no va en esa ubicación?
-5. ¿Qué opinas de que exista un banco de genes accesible y gratuito para todos? ¿Conoces algún otro banco de información biológica?
-6. ¿Qué otros genes (además de *HBA1*) propondrías para clasificar mejor a los organismos de tu base de datos?
-7. ¿Qué te pareció realizar un análisis filogenético?
-8. ¿Cuánto tiempo tardaste en completar todos los pasos hasta obtener tu árbol?
-9. ¿Qué significan los valores de bootstrap que aparecen en el árbol?
-10. ¿Qué crees que ocurriría en el árbol si incluyeras 100 organismos más de diferentes especies? ¿Seguirían agrupadas juntas las secuencias que analizaste?
+1. ¿Qué nos indica el acomodo de los organismos en el árbol? ¿Es congruente con lo que sabes de su clasificación, o ves algún organismo fuera de lugar?
+2. ¿Por qué se utilizan genes para reconstruir la historia evolutiva de los organismos?
+3. ¿Qué significan los valores de bootstrap que aparecen en el árbol?
+4. ¿Tuviste problemas para encontrar alguna secuencia? Si así fue, ¿cómo lo resolviste?
+5. ¿Qué otros genes (además de *HBA1*) propondrías para clasificar mejor a los organismos de tu base de datos?
+6. ¿Qué opinas de que exista un banco de genes accesible y gratuito para todos? ¿Conoces algún otro banco de información biológica?
 
 ## 5. Conclusión
 

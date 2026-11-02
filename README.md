@@ -6,6 +6,8 @@
 
 ### Práctica de Bioinformática · Biología Celular
 
+🌐 **Versión web:** <https://rgescobedo.github.io/filogenia-hemoglobina/>
+
 **Reconstrucción filogenética a partir del gen de la hemoglobina subunidad alfa 1 (*HBA1*) con NCBI GenBank y SeaView**
 
 Universidad Autónoma de Chihuahua · Facultad de Zootecnia y Ecología
@@ -38,7 +40,7 @@ Conocer los fundamentos del análisis filogenético y realizar la reconstrucció
 - [x] Buscar y descargar secuencias nucleotídicas en **NCBI GenBank**
 - [x] Distinguir el gen correcto (*HBA1*) de genes parecidos (*HBB*, *HBA2*, *AHSP*)
 - [x] Construir un archivo **FASTA** con varias secuencias
-- [x] Realizar un **alineamiento múltiple** y recortarlo correctamente
+- [x] Realizar un **alineamiento múltiple** de secuencias
 - [x] Reconstruir un árbol con **PhyML** y evaluar su confiabilidad con **bootstrap**
 - [x] **Enraizar** el árbol con un grupo externo e interpretar su topología
 
@@ -49,9 +51,7 @@ flowchart LR
     A["🎬 Lista de<br/>organismos"] --> B["🔎 Búsqueda en<br/>NCBI Nucleotide"]
     B --> C["📄 Archivo<br/>FASTA"]
     C --> D["🧩 Alineamiento<br/>(SeaView)"]
-    D --> E["✂️ Recorte de<br/>extremos 5' y 3'"]
-    E --> D
-    E --> F["🌳 PhyML<br/>bootstrap 100"]
+    D --> F["🌳 PhyML<br/>bootstrap 100"]
     F --> G["🐟 Enraizar con<br/>grupo externo"]
     G --> H["📊 Interpretar<br/>y reportar"]
 ```
@@ -62,7 +62,7 @@ flowchart LR
 | --- | --- | --- |
 | 🛠️ **Parte 1** | [Instalación de SeaView](docs/01_instalacion_seaview.md) | Descargar y abrir el programa |
 | 🗃️ **Parte 2** | [Base de datos en NCBI](docs/02_base_de_datos_ncbi.md) | Elegir organismos y descargar las secuencias de *HBA1* |
-| 🧩 **Parte 3** | [Alineamiento múltiple](docs/03_alineamiento.md) | Alinear y recortar las secuencias |
+| 🧩 **Parte 3** | [Alineamiento múltiple](docs/03_alineamiento.md) | Alinear las secuencias |
 | 🌳 **Parte 4** | [Árbol filogenético](docs/04_arbol_filogenetico.md) | PhyML, bootstrap, enraizado y exportación |
 | 📝 **Entregable** | [Plantilla de reporte](plantillas/reporte_practica.md) | Formato que entrega cada estudiante |
 | 📋 **Entregable** | [Tabla de organismos (.csv)](plantillas/tabla_organismos.csv) | Tabla 1 para llenar |
@@ -71,9 +71,9 @@ flowchart LR
 ## ⚡ Inicio rápido
 
 1. Instala **[SeaView](http://doua.prabi.fr/software/seaview)** para tu sistema operativo.
-2. Haz la lista de los animales de la película en la [tabla de organismos](plantillas/tabla_organismos.csv) e **incluye un pez** como grupo externo.
+2. Haz la lista de los animales de la película en la [tabla de organismos](plantillas/tabla_organismos.csv) e **incluye un pez** como grupo externo (sugerencia: el pez payaso de *Buscando a Nemo*).
 3. Descarga una secuencia de *HBA1* por organismo desde **[NCBI Nucleotide](https://www.ncbi.nlm.nih.gov/nuccore/)**, en formato FASTA.
-4. Alinea → recorta → vuelve a alinear en SeaView.
+4. Alinea las secuencias en SeaView (**Align → Align all**).
 5. Corre **PhyML** con **100 réplicas de bootstrap**.
 6. Enraiza con el pez, activa *Br support* y guarda el árbol en PDF.
 7. Completa la [plantilla de reporte](plantillas/reporte_practica.md).
@@ -95,7 +95,7 @@ flowchart LR
 
 ## 📄 Licencia
 
-Material didáctico bajo licencia [Creative Commons BY-NC-SA 4.0](LICENSE): puedes usarlo y adaptarlo con fines no comerciales, citando al autor y compartiendo bajo la misma licencia.
+Material didáctico bajo licencia [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es): puedes usarlo y adaptarlo con fines no comerciales, citando al autor y compartiendo bajo la misma licencia.
 
 ---
 

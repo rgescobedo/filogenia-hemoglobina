@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'es' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title and page.title != site.title %}{{ page.title | strip_html }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="icon" href="{{ '/docs/img/logo_fzye.webp' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <img src="{{ '/docs/img/logo_fzye.webp' | relative_url }}" alt="">
+      <span>Filogenia de la Hemoglobina α1</span>
+    </a>
+    <nav>
+      <a href="{{ '/docs/01_instalacion_seaview.html' | relative_url }}">1 · SeaView</a>
+      <a href="{{ '/docs/02_base_de_datos_ncbi.html' | relative_url }}">2 · NCBI</a>
+      <a href="{{ '/docs/03_alineamiento.html' | relative_url }}">3 · Alineamiento</a>
+      <a href="{{ '/docs/04_arbol_filogenetico.html' | relative_url }}">4 · Árbol</a>
+      <a href="{{ '/plantillas/reporte_practica.html' | relative_url }}">Reporte</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    {{ content }}
+  </main>
+
+  <footer class="foot">
+    Universidad Autónoma de Chihuahua · Facultad de Zootecnia y Ecología ·
+    <a href="https://github.com/rgescobedo/filogenia-hemoglobina">Ver en GitHub</a>
+  </footer>
+
+  <script>
+    // Avisos estilo GitHub: > [!NOTE], [!TIP], [!IMPORTANT], [!WARNING], [!CAUTION]
+    const labels = {NOTE:'Nota', TIP:'Consejo', IMPORTANT:'Importante', WARNING:'Advertencia', CAUTION:'Precaución'};
+    document.querySelectorAll('.content blockquote').forEach(bq => {
+      const p = bq.querySelector('p');
+      if (!p) return;
+      const m = p.innerHTML.match(/^\s*\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]\s*(<br\s*\/?>)?\s*/);
+      if (!m) return;
+      p.innerHTML = p.innerHTML.slice(m[0].length);
+      if (!p.textContent.trim() && !p.querySelector('img')) p.remove();
+      bq.classList.add('alert', 'alert-' + m[1].toLowerCase());
+      const t = document.createElement('p');
+      t.className = 'alert-title';
+      t.textContent = labels[m[1]];
+      bq.prepend(t);
+    });
+    // Checklists [ ] / [x]
+    document.querySelectorAll('.content li').forEach(li => {
+      const n = li.firstChild;
+      if (n && n.nodeType === 3) {
+        const m = n.textContent.match(/^\s*\[( |x)\]\s*/i);
+        if (m) {
+          n.textContent = n.textContent.slice(m[0].length);
+          li.classList.add('task');
+          li.prepend(Object.assign(document.createElement('span'), {className: 'box' + (m[1].trim() ? ' done' : '')}));
+        }
+      }
+    });
+    // Tablas con desplazamiento horizontal en celular
+    document.querySelectorAll('.content table').forEach(t => {
+      const w = document.createElement('div'); w.className = 'table-wrap';
+      t.parentNode.insertBefore(w, t); w.appendChild(t);
+    });
+  </script>
+  <script type="module">
+    const blocks = document.querySelectorAll('pre code.language-mermaid, .language-mermaid pre code');
+    if (blocks.length) {
+      const { default: mermaid } = await import('https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.esm.min.mjs');
+      blocks.forEach(code => {
+        const host = code.closest('div.language-mermaid') || code.closest('pre');
+        const div = document.createElement('div');
+        div.className = 'mermaid';
+        div.textContent = code.textContent;
+        host.replaceWith(div);
+      });
+      mermaid.initialize({ startOnLoad: false, theme: 'base', themeVariables: {
+        primaryColor: '#f3e8fa', primaryBorderColor: '#6a1b9a', primaryTextColor: '#2b1a33',
+        lineColor: '#6a1b9a', fontFamily: 'Source Sans 3, sans-serif' } });
+      await mermaid.run({ querySelector: '.mermaid' });
+    }
+  </script>
+</body>
+</html>
